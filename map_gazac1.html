@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Twitter Sentiment Analysis</title>
+        <meta name="description" content="Twiter Sentiment and Data  analysis" />
+        <meta name="keywords" content="twitter sentiment analysis,twitter,sentiment,hadoop,hive" />
+        <meta name="author" content="NiteshSingh" />
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/component.css" />
+        <script src="js/modernizr.custom.js"></script>
+        <script type='text/javascript' src='https://www.google.com/jsapi'></script>
+        <script type='text/javascript'>
+            google.load('visualization', '1', {'packages': ['geochart']});
+            google.setOnLoadCallback(drawRegionsMap);
+
+            function drawRegionsMap() {
+                var data = google.visualization.arrayToDataTable([
+                    ['Country','Sentiment'],
+['AFGHANISTAN',-176],
+['ARGENTINA',-1010],
+['ARMENIA',-63],
+['AUSTRALIA',-7523],
+['AUSTRIA',-233],
+['AZERBAIJAN',-56],
+['BANGLADESH',-546],
+['BELARUS',5],
+['BELGIUM',-1003],
+['BOLIVIA',-98],
+['BOSNIA AND HERZEGOWINA',-96],
+['BRAZIL',-1665],
+['BULGARIA',-58],
+['CANADA',-6762],
+['CAPE',-30],
+['CHILE',-2003],
+['CHINA',-3164],
+['COLOMBIA',-322],
+['CROATIA',-94],
+['CZECH',-65],
+['DENMARK',-710],
+['ECUADOR',-9128],
+['EGYPT',-2867],
+['ESTONIA',-5],
+['FINLAND',-443],
+['FRANCE',-4733],
+['GEORGIA',-31],
+['GERMANY',-2611],
+['GREECE',-12321],
+['GREENLAND',-5659],
+['GUAM',-4],
+['GUYANA',-34],
+['HONG KONG',-323],
+['HUNGARY',-63],
+['INDIA',-6834],
+['INDONESIA',-3906],
+['IRAN (ISLAMIC REPUBLIC OF)',-1165],
+['IRAQ',-5992],
+['IRELAND',-3654],
+['ISRAEL',-5903],
+['ITALY',-1411],
+['JAPAN',-2869],
+['KAZAKHSTAN',-182],
+['KENYA',-825],
+['KOREA (S)',-286],
+['KUWAIT',-1800],
+['LATVIA',-18],
+['LIBERIA',-80],
+['LITHUANIA',-69],
+['MACEDONIA',-49],
+['MALAYSIA',-5561],
+['MARSHALL ISLANDS',-2],
+['MEXICO',-1313],
+['MONGOLIA',-6],
+['MOROCCO',-7063],
+['MYANMAR',-1],
+['NEPAL',-9],
+['NETHERLANDS',-21845],
+['NEW ZEALAND',-1226],
+['NIGERIA',-633],
+['OMAN',-561],
+['PAKISTAN',-9130],
+['PAPUA NEW GUINEA',-18],
+['PERU',-242],
+['POLAND',-152],
+['PORTUGAL',-869],
+['ROMANIA',-135],
+['RUSSIAN FEDERATION',-1090],
+['SAUDI ARABIA',-3867],
+['SINGAPORE',-1846],
+['SLOVAKIA',-35],
+['SLOVENIA',-93],
+['SOLOMON ISLANDS',-6],
+['SOUTH AFRICA',-2392],
+['SPAIN',-3321],
+['SRI LANKA',-188],
+['SWEDEN',-1140],
+['TAIWAN',-235],
+['THAILAND',-2412],
+['TONGA',-60],
+['TURKEY',-2636],
+['UKRAINE',-61],
+['UNITED ARAB EMIRATES',-3982],
+['UNITED KINGDOM',-42591],
+['UNITED STATES',-76968],
+['UZBEKISTAN',-338],
+['VENEZUELA',-1764],
+['VIET NAM',-1],
+['ZIMBABWE',-595]
+
+                ]);
+
+                    var options = {};
+
+                    var chart = new google.visualization.GeoChart(document.getElementById('chart_div'));
+                    chart.draw(data, options);
+                    };
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <ul id="gn-menu" class="gn-menu-main">
+              
+        
+
+    <li><a href="index.html">HOME</a></li>
+    <li><a class="" href="cwg.html"><span>Common Wealth Games</span></a></li>
+    <li><a class="" href="eid.html"><span>Eid</span></a></li>    
+    <li><a class="" href="ive.html"><span>India vs England</span></a></li>    
+    <li><a class="" href="gaza.html"><span>Gaza Attack</span></a></li>   
+    <li><a class="" href="xiaomi.html"><span>XiaomiMi3</span></a></li>  
+    <li><a class="" href="screen.html"><span>ScreenShots</span></a></li> 
+    <li><a class="" href="aboutus.html"><span>About Us</span></a></li>     
+
+
+    </ul>
+<div id='chart_div' style="position:relative; top:100px; width:100%;z-index:0;">
+   
+            </div>
+            <div style="position:absolute;color: red; top:100px; width:100%;z-index:1">A bigger number means the more users From The Country tweeted positively meaning they where happy </div>
+            <div style="position:absolute;color:black; top:910px; width:100%;left:70px;z-index:1">
+            Negative(sad)..............Netural..................Positive(Happy)
+            </div>
+            <div style="position:absolute;color: red; top:100px; width:100%;z-index:1">A bigger number means the more users From The Country tweeted positively meaning they where happy and vice versa </div>
+            <div style="position:absolute;color: red; top:150px; width:100%;z-index:1"><a href="gaza.html">Gaza Menu</a></div>
+            <div style="position:absolute;color: red; top:180px; width:100%;z-index:1"><a href="map_gazat1.html">Map By TimeZone 1</a></div>
+            <div style="position:absolute;color: red; top:200px; width:100%;z-index:1"><a href="map_gazat2.html">Map By TimeZone 2</a></div>
+            <div style="position:absolute;color: red; top:220px; width:100%;z-index:1"><a href="hash_gaza.html">Hash Tags</a></div>
+            <div style="position:absolute;color:black; top:910px; width:100%;left:25px;z-index:1">
+</div><!-- /container -->
+<script src="js/classie.js"></script>
+<script src="js/gnmenu.js"></script>
+<script>
+    new gnMenu( document.getElementById( 'gn-menu' ) );
+</script>
+<div class="credit">
+    <h1>Project by <span>Nitesh Singh, Dr. Anuj Bala</span></h1>
+</div>
+</body>
+</html>

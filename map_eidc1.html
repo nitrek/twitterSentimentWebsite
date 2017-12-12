@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Twitter Sentiment Analysis</title>
+        <meta name="description" content="Twiter Sentiment and Data  analysis" />
+        <meta name="keywords" content="twitter sentiment analysis,twitter,sentiment,hadoop,hive" />
+        <meta name="author" content="NiteshSingh" />
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/component.css" />
+        <script src="js/modernizr.custom.js"></script>
+        <script type='text/javascript' src='https://www.google.com/jsapi'></script>
+        <script type='text/javascript'>
+            google.load('visualization', '1', {'packages': ['geochart']});
+            google.setOnLoadCallback(drawRegionsMap);
+
+            function drawRegionsMap() {
+                var data = google.visualization.arrayToDataTable([
+                   
+                    ['Country','Sentiment'],
+                     ['UNITED STATES',2435],
+                    ['MALAYSIA',987],
+                    ['CHINA',923],
+                    ['INDIA',704],
+                    ['THAILAND',697],
+                    ['INDONESIA',530],
+                    ['UNITED KINGDM',375],
+                    ['PAKISTAN',333],
+                    ['IRAQ',297],
+                    ['GREECE',270],
+                    ['NETHERLANDS',259],
+                    ['ECUADOR',144],
+                    ['UNITED ARAB EMIRATES',135],
+                    ['SAUDI ARABIA',120],
+                    ['MOROCCO',104],
+                    ['CANADA',95],
+                    ['BANGLADESH',78],
+                    ['JAPAN',62],
+                    ['NEPAL',52],
+                    ['SINGAPORE',51],
+                    ['EGYPT',47],
+                    ['GREENLAND',44],
+                    ['KUWAIT',44],
+                    ['TURKEY',43],
+                    ['KAZAKHSTAN',39],
+                    ['FRANCE',38],
+                    ['GERMANY',35],
+                    ['AUSTRALIA',29],
+                    ['KOREA (S)',26],
+                    [' RUSSIAN FEDERATION',23],
+                    ['HONG KONG',23],
+                    ['BELGIUM',21],
+                    ['MEXICO',18],
+                    ['KENYA',17],
+                    ['OMAN',16],
+                    ['SPAIN',16],
+                    ['AFGHANISTAN',14],
+                    ['BOLIVIA',14],
+                    ['ARGENTINA',12],
+                    ['ISRAEL',12],
+                    ['ITALY',12],
+                    ['BRAZIL',10],
+                    ['ROMANIA',10],
+                    ['SRI LANKA',10],
+                    ['CHILE',9],
+                    ['BULGARIA',7],
+                    ['TAIWAN',7],
+                    ['PERU',6],
+                    ['PAPUA NEW GUINEA',6],
+                    ['NEW ZEALAND',6],
+                    ['DENMARK',5],
+                    ['IRELAND',5],
+                    ['ARMENIA',4],
+                    ['NIGERIA',4],
+                    ['AZERBAIJAN',3],
+                    ['GUYANA',3],
+                    ['PORTUGAL',3],
+                    ['COLOMBIA',2],
+                    ['FINLAND',1],
+                    ['GEORGIA',1],
+                    ['MACEDONIA',1],
+                    ['MONGOLIA',1],
+                    ['SLOVENIA',1],
+                    ['VIET NAM',1],
+                    ['AUSTRIA',0],
+                    ['HUNGARY',0],
+                    ['LITHUANIA',0],
+                    ['MYANMAR',0],
+                    ['TONGA',0],
+                    ['UKRAINE',0],
+                    ['BOSNIA AND HERZEGOWINA',0],
+                    ['MARSHALL ISLANDS',0],
+                    ['CAPE VERDE',0],
+                    ['CROATIA',-1],
+                    ['LATVIA',-1],
+                    ['LIBERIA',-1],
+                    ['UZBEKISTAN',-1],
+                    ['IRAN (ISLAMIC REPUBLIC OF)',-1],
+                    ['SOUTH AFRICA',-1],
+                    ['CZECH REPUBLIC',-1],
+                    ['POLAND',-2],
+                    ['SLOVAKIA',-2],
+                    ['ZIMBABWE',-3],
+                    ['SWEDEN',-4],
+                    ['VENEZUELA',-8]
+
+
+                ]);
+
+                var options = {};
+
+                var chart = new google.visualization.GeoChart(document.getElementById('chart_div'));
+                chart.draw(data, options);
+            };
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <ul id="gn-menu" class="gn-menu-main">
+               
+
+    <li><a href="index.html">HOME</a></li>
+    <li><a class="" href="cwg.html"><span>Common Wealth Games</span></a></li>
+    <li><a class="" href="eid.html"><span>Eid</span></a></li>    
+    <li><a class="" href="ive.html"><span>India vs England</span></a></li>    
+    <li><a class="" href="gaza.html"><span>Gaza Attack</span></a></li>   
+    <li><a class="" href="xiaomi.html"><span>XiaomiMi3</span></a></li>  
+    <li><a class="" href="screen.html"><span>ScreenShots</span></a></li> 
+    <li><a class="" href="aboutus.html"><span>About Us</span></a></li>     
+
+    
+    </ul>
+<div id='chart_div' style="position:relative;top:100px; width:100%;z-index:0;"></div>
+            <div style="position:absolute;color: red; top:100px; width:100%;z-index:1">A bigger number means the more users From The Country tweeted positively meaning they where happy and vice versa </div>
+            <div style="position:absolute;color: red; top:150px; width:100%;z-index:1"><a href="eid.html">Eid Menu</a></div>
+            <div style="position:absolute;color: red; top:180px; width:100%;z-index:1"><a href="map_eidt1.html">Map By TimeZone 1</a></div>
+            <div style="position:absolute;color: red; top:200px; width:100%;z-index:1"><a href="map_eidt2.html">Map By TimeZone 2</a></div>
+            <div style="position:absolute;color: red; top:220px; width:100%;z-index:1"><a href="hash_eid.html">Hash Tags</a></div>
+            <div style="position:absolute;color:black; top:910px; width:100%;left:25px;z-index:1">
+</div><!-- /container -->
+<script src="js/classie.js"></script>
+<script src="js/gnmenu.js"></script>
+<script>
+    new gnMenu( document.getElementById( 'gn-menu' ) );
+</script>
+<div class="credit">
+    <h1>Project by <span>Nitesh Singh, Dr. Anuj Bala</span></h1>
+</div>
+</body>
+</html>

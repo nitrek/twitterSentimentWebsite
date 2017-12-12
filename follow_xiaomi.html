@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>Twitter Sentiment Analysis</title>
+<meta name="description" content="Twiter Sentiment and Data  analysis" />
+<meta name="keywords" content="twitter sentiment analysis,twitter,sentiment,hadoop,hive" />
+<meta name="author" content="NiteshSingh" />
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="css/demo.css" />
+<link rel="stylesheet" type="text/css" href="css/component.css" />
+<script src="js/modernizr.custom.js"></script>
+    <script type='text/javascript' src='https://www.google.com/jsapi'></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      function drawTable() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'UserName');
+        data.addColumn('number', 'Followers');
+        data.addRows([
+          ['<a href = "https://twitter.com/timesofindia">timesofindia</a>', {v: 2262163, f: '2262163'} ],
+          [  '<a href = "https://twitter.com/YahooNews">YahooNews</a>', {v:810545,   f: '810545'} ],
+          [ '<a href = "https://twitter.com/oojt2">oojt2</a>', {v: 703442, f: '703442'} ],
+          [   '<a href = "https://twitter.com/Excelsior">Excelsior</a>', {v: 605014,  f: '605014'} ],
+          [   '<a href = "https://twitter.com/CNETNews">CNETNews</a>', {v: 377402,  f: '377402'} ],
+          [   '<a href = "https://twitter.com/ShekharRavjiani">ShekharRavjiani</a>', {v: 347406,  f: '347406'} ],
+          [   '<a href = "https://twitter.com/firstpostin">firstpostin</a>', {v: 305865,  f: '305865'} ],
+            [  '<a href = "https://twitter.com/vayapagafantas">vayapagafantas</a>', {v: 303619,  f: '303619'} ],
+            [   '<a href = "https://twitter.com/bbcommunity">bbcommunity</a>', {v: 245992,  f: '245992'} ],
+            [   '<a href = "https://twitter.com/TheRue">TheRue</a>', {v: 238560,  f: '238560'} ],
+        ]);            
+            
+        var table = new google.visualization.Table(document.getElementById('table_div'));
+            
+             var formatter = new google.visualization.ColorFormat();
+            formatter.addRange(200000, 250000, 'white', 'blue');
+            formatter.addRange(250000, 310000, 'black', 'yellow');
+            formatter.addRange(310000, 400000, 'white', 'red');
+            formatter.addRange(400000, 710000, 'white', 'orange');
+            formatter.addRange(710000, null, 'white', 'green');
+            formatter.format(data, 1); // Apply formatter to second column
+
+        table.draw(data, {showRowNumber: true,allowHtml: true} );
+      }
+    </script>
+    
+   
+<div align='center' id='table_div' style="position:relative;top:100px; width:100%;z-index:0;text-align:center;"></div>
+  </head>
+
+  <body>
+      
+              <div class="container" >
+<ul id="gn-menu" class="gn-menu-main">
+    <ul id="gn-menu" class="gn-menu-main">
+        <li class="gn-trigger">
+            <a class="gn-icon gn-icon-menu"><span>xiaomi</span></a>
+            <nav class="gn-menu-wrapper">
+                <div class="gn-scroller">
+                    <ul class="gn-menu">
+                        <a class=""><span>Menu</span></a>
+
+
+                        <li><a class="gn-icon gn-icon-tmap"href="#">Sentiment Map Of Dictionary 1</a>
+                            <ul class="gn-submenu">
+                                <li><a class="gn-icon gn-icon-article" href="map_xiaomic1.html">By Country</a></li>
+                                <li><a class="gn-icon gn-icon-pictures" href="map_xiaomit1.html">By Time Zone</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="gn-icon gn-icon-tmap"href="#">Sentiment Map Of Dictionary 2</a>
+                            <ul class="gn-submenu">
+                                <li><a class="gn-icon gn-icon-article" href="map_xiaomic2.html">By Country</a></li>
+                                <li><a class="gn-icon gn-icon-pictures" href="map_xiaomit2.html">By Time Zone</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a class="gn-icon gn-icon-download" href="#">Tweet</a>
+                            <ul class="gn-submenu">
+                                <li><a class="gn-icon gn-icon-article" href="tweet_xiaomip.html">Most Positive</a></li>
+                                <li><a class="gn-icon gn-icon-pictures" href="tweet_xiaomin.html">Most Negative</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a class="gn-icon gn-icon-help"href="hash_xiaomi.html">HashTags</a></li>
+                        <li><a class="gn-icon gn-icon-cog" href="#">Top Users</a>
+                            <ul class="gn-submenu">
+                                <li><a class="gn-icon gn-icon-article"href="follow_xiaomi.html">Followers</a></li>
+                                <li><a class="gn-icon gn-icon-pictures" href="friend_xiaomi.html">Friends</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a class="gn-icon gn-icon-archive" href="aboutus.html">About Us</a></li>
+
+                    </ul>
+                </div><!-- /gn-scroller -->
+            </nav>
+        </li>
+
+
+
+
+<li><a href="index.html">HOME</a></li>
+<li><a class="" href="cwg.html"><span>Common Wealth Games</span></a></li>
+<li><a class="" href="eid.html"><span>Eid</span></a></li>    
+<li><a class="" href="ive.html"><span>India vs England</span></a></li>    
+<li><a class="" href="gaza.html"><span>Gaza Attack</span></a></li>   
+<li><a class="" href="xiaomi.html"><span>XiaomiMi3</span></a></li>  
+<li><a class="" href="screen.html"><span>ScreenShots</span></a></li> 
+<li><a class="" href="aboutus.html"><span>About Us</span></a></li>     
+
+
+</ul>
+<div id="textcloud" ></div>
+</div><!-- /container -->
+<script src="js/classie.js"></script>
+<script src="js/gnmenu.js"></script>
+<script>
+new gnMenu( document.getElementById( 'gn-menu' ) );
+</script>
+
+   
+<div class="credit" style="position:relative;top:300px; width:99%;z-index:0;">
+<h1>Project by <span>Nitesh Singh, Dr. Anuj Bala</span></h1>
+</div>
+  </body>
+</html>

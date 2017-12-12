@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Twitter Sentiment Analysis</title>
+        <meta name="description" content="Twiter Sentiment and Data  analysis" />
+        <meta name="keywords" content="twitter sentiment analysis,twitter,sentiment,hadoop,hive" />
+        <meta name="author" content="NiteshSingh" />
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/component.css" />
+        <script src="js/modernizr.custom.js"></script>
+        <script type='text/javascript' src='https://www.google.com/jsapi'></script>
+        <script type='text/javascript'>
+            google.load('visualization', '1', {'packages': ['geochart']});
+            google.setOnLoadCallback(drawRegionsMap);
+
+            function drawRegionsMap() {
+                var data = google.visualization.arrayToDataTable([
+                    ['Country','Sentiment'],
+['AFGHANISTAN',1],
+['AUSTRALIA',57],
+['BANGLADESH',8],
+['BELGIUM',1],
+['BOLIVIA',1],
+['BRAZIL',4],
+['BULGARIA',1],
+['CANADA',12],
+['CHINA',13],
+['DENMARK',1],
+['ECUADOR',30],
+['EGYPT',-1],
+['ESTONIA',1],
+['FINLAND',2],
+['FRANCE',2],
+['GERMANY',8],
+['GREECE',19],
+['GREENLAND',5],
+['GUYANA',-1],
+['HONG',4],
+['HUNGARY',-1],
+['INDIA',1368],
+['INDONESIA',1],
+['IRAN (ISLAMIC REPUBLIC OF)',2],
+['IRAQ',8],
+['IRELAND',11],
+['ISRAEL',4],
+['ITALY',1],
+['KAZAKHSTAN',2],
+['KENYA',13],
+['KOREA',3],
+['KUWAIT',5],
+['LIBERIA',2],
+['MALAYSIA',5],
+['MEXICO',1],
+['MOROCCO',184],
+['NEPAL',37],
+['NETHERLANDS',247],
+['NEW',16],
+['NIGERIA',3],
+['OMAN',3],
+['PAKISTAN',217],
+['PAPUA NEW GUINEA',1],
+['PORTUGAL',11],
+['RUSSIAN',2],
+['SAUDI',13],
+['SINGAPORE',16],
+['SOLOMON',1],
+['SOUTH',8],
+['SPAIN',-1],
+['SRI',13],
+['SWEDEN',3],
+['TAIWAN',1],
+['THAILAND',2],
+['TONGA',2],
+['TURKEY',-1],
+['UNITED EMIRATES',41],
+['UNITED KINGDOM',1118],
+['UNITED STATES',311],
+['ZIMBABWE',1]
+
+                ]);
+
+                    var options = {};
+
+                    var chart = new google.visualization.GeoChart(document.getElementById('chart_div'));
+                    chart.draw(data, options);
+                    };
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <ul id="gn-menu" class="gn-menu-main">
+                
+        
+
+    <li><a href="index.html">HOME</a></li>
+    <li><a class="" href="cwg.html"><span>Common Wealth Games</span></a></li>
+    <li><a class="" href="eid.html"><span>Eid</span></a></li>    
+    <li><a class="" href="ive.html"><span>India vs England</span></a></li>    
+    <li><a class="" href="gaza.html"><span>Gaza Attack</span></a></li>   
+    <li><a class="" href="xiaomi.html"><span>XiaomiMi3</span></a></li>  
+    <li><a class="" href="screen.html"><span>ScreenShots</span></a></li> 
+    <li><a class="" href="aboutus.html"><span>About Us</span></a></li>     
+
+
+    </ul>
+<div id='chart_div' style="position:relative; top:100px; width:100%;z-index:0;">
+   
+            </div>
+            <div style="position:absolute;color: red; top:100px; width:100%;z-index:1">A bigger number means the more users From The Country tweeted positively meaning they where happy and vice versa </div>
+            <div style="position:absolute;color: red; top:150px; width:100%;z-index:1"><a href="ive.html">Ind v Eng Menu</a></div>
+            <div style="position:absolute;color: red; top:180px; width:100%;z-index:1"><a href="map_ivet1.html">Map By TimeZone 1</a></div>
+            <div style="position:absolute;color: red; top:200px; width:100%;z-index:1"><a href="map_ivet2.html">Map By TimeZone 2</a></div>
+            <div style="position:absolute;color: red; top:220px; width:100%;z-index:1"><a href="hash_ive.html">Hash Tags</a></div>
+            <div style="position:absolute;color:black; top:910px; width:100%;left:25px;z-index:1">
+                    Negative(sad)...........Netural...........Positive(Happy)
+                </div>
+</div><!-- /container -->
+<script src="js/classie.js"></script>
+<script src="js/gnmenu.js"></script>
+<script>
+    new gnMenu( document.getElementById( 'gn-menu' ) );
+</script>
+<div class="credit">
+    <h1>Project by <span>Nitesh Singh, Dr. Anuj Bala</span></h1>
+</div>
+</body>
+</html>

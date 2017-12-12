@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>Twitter Sentiment Analysis</title>
+<meta name="description" content="Twiter Sentiment and Data  analysis" />
+<meta name="keywords" content="twitter sentiment analysis,twitter,sentiment,hadoop,hive" />
+<meta name="author" content="NiteshSingh" />
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="css/demo.css" />
+<link rel="stylesheet" type="text/css" href="css/component.css" />
+<script src="js/modernizr.custom.js"></script>
+    <script type='text/javascript' src='https://www.google.com/jsapi'></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      function drawTable() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'UserName');
+        data.addColumn('number', 'Followers');
+        data.addRows([
+          ['<a href = "https://twitter.com/oojt2">oojt2</a>', {v: 703077, f: '703077'} ],
+          [  '<a href = "https://twitter.com/SavageKayven">SavageKayven</a>', {v:142154,   f: '142154'} ],
+          [ '<a href = "https://twitter.com/iEatAssGod">iEatAssGod</a>', {v: 122556, f: '122556'} ],
+          [   '<a href = "https://twitter.com/Diddibear">Diddibear</a>', {v: 122196,  f: '122196'} ],
+          [   '<a href = "https://twitter.com/JusCallOnTYRONE">JusCallOnTYRONE</a>', {v: 106042,  f: '106042'} ],
+          [   '<a href = "https://twitter.com/VintageMonroe_">VintageMonroe_</a>', {v: 89332,  f: '89332'} ],
+          [   '<a href = "https://twitter.com/SleepIsForRich">SleepIsForRich</a>', {v: 89016,  f: '89016'} ],
+            [  '<a href = "https://twitter.com/fuunyyjokes">fuunyyjokes</a>', {v: 82624,  f: '82624'} ],
+            [   '<a href = "https://twitter.com/TisaCuh">TisaCuh</a>', {v: 82198,  f: '82198'} ],
+            [   '<a href = "https://twitter.com/swank0cean">swank0cean</a>', {v: 80249,  f: '80249'} ],
+        ]);            
+            
+            
+        var table = new google.visualization.Table(document.getElementById('table_div'));
+            
+             var formatter = new google.visualization.ColorFormat();
+            formatter.addRange(80000, 82199, 'white', 'blue');
+            formatter.addRange(82200, 89017, 'black', 'yellow');
+            formatter.addRange(89331, 110000, 'white', 'red');
+            formatter.addRange(120000, 130000, 'white', 'orange');
+            formatter.addRange(130000, null, 'white', 'green');
+            formatter.format(data, 1); // Apply formatter to second column
+
+        table.draw(data, {showRowNumber: true,allowHtml: true} );
+      }
+    </script>
+    
+   
+<div align='center' id='table_div' style="position:relative;top:100px; width:100%;z-index:0;text-align:center;"></div>
+  </head>
+
+  <body>
+      
+              <div class="container">
+            <ul id="gn-menu" class="gn-menu-main">
+                <li class="gn-trigger">
+                    <a class="gn-icon gn-icon-menu"><span>xiaomi</span></a>
+                    <nav class="gn-menu-wrapper">
+                        <div class="gn-scroller">
+                            <ul class="gn-menu">
+                                <a class=""><span>Menu</span></a>
+                                
+
+                            <li><a class="gn-icon gn-icon-tmap"href="#">Sentiment Map Of Dictionary 1</a>
+                                <ul class="gn-submenu">
+                                    <li><a class="gn-icon gn-icon-article" href="map_xiaomic1.html">By Country</a></li>
+                                    <li><a class="gn-icon gn-icon-pictures" href="map_xiaomit1.html">By Time Zone</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="gn-icon gn-icon-tmap"href="#">Sentiment Map Of Dictionary 2</a>
+                                <ul class="gn-submenu">
+                                    <li><a class="gn-icon gn-icon-article" href="map_xiaomic2.html">By Country</a></li>
+                                    <li><a class="gn-icon gn-icon-pictures" href="map_xiaomit2.html">By Time Zone</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a class="gn-icon gn-icon-download" href="#">Tweet</a>
+                                <ul class="gn-submenu">
+                                    <li><a class="gn-icon gn-icon-article" href="tweet_xiaomip.html">Most Positive</a></li>
+                                    <li><a class="gn-icon gn-icon-pictures" href="tweet_xiaomin.html">Most Negative</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a class="gn-icon gn-icon-help"href="hash_xiaomi.html">HashTags</a></li>
+                            <li><a class="gn-icon gn-icon-cog" href="#">Top Users</a>
+                                <ul class="gn-submenu">
+                                    <li><a class="gn-icon gn-icon-article"href="follow_xiaomi.html">Followers</a></li>
+                                    <li><a class="gn-icon gn-icon-pictures" href="friend_xiaomi.html">Friends</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a class="gn-icon gn-icon-archive" href="aboutus.html">About Us</a></li>
+
+                            </ul>
+                        </div><!-- /gn-scroller -->
+                </nav>
+            </li>
+
+        
+    <li><a href="index.html">HOME</a></li>
+    <li><a class="" href="cwg.html"><span>Common Wealth Games</span></a></li>
+    <li><a class="" href="eid.html"><span>Eid</span></a></li>    
+    <li><a class="" href="ive.html"><span>India vs England</span></a></li>    
+    <li><a class="" href="gaza.html"><span>Gaza Attack</span></a></li>   
+    <li><a class="" href="xiaomi.html"><span>XiaomiMi3</span></a></li>  
+    <li><a class="" href="screen.html"><span>ScreenShots</span></a></li> 
+    <li><a class="" href="aboutus.html"><span>About Us</span></a></li>          
+    </ul>
+</div><!-- /container -->
+<script src="js/classie.js"></script>
+<script src="js/gnmenu.js"></script>
+<script>
+new gnMenu( document.getElementById( 'gn-menu' ) );
+</script>
+
+   
+<div class="credit" style="position:relative;top:300px; width:99%;z-index:0;">
+<h1>Project by <span>Nitesh Singh, Dr. Anuj Bala</span></h1>
+</div>
+  </body>
+</html>

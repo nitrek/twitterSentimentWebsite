@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Twitter Sentiment Analysis</title>
+        <meta name="description" content="Twiter Sentiment and Data  analysis" />
+        <meta name="keywords" content="twitter sentiment analysis,twitter,sentiment,hadoop,hive" />
+        <meta name="author" content="NiteshSingh" />
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/component.css" />
+        <script src="js/modernizr.custom.js"></script>
+        <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+        <script type="text/javascript" src="http://word-cumulus-goog-vis.googlecode.com/svn/trunk/wordcumulus.js"></script>
+        <script type="text/javascript" src="http://word-cumulus-goog-vis.googlecode.com/svn/trunk/swfobject.js"></script>
+        <script type="text/javascript">
+            google.load("visualization", "1");
+
+            // Set callback to run when API is loaded
+            google.setOnLoadCallback(drawVisualization);
+
+            // Called when the Visualization API is loaded.
+            function drawVisualization() {
+
+                // Create and populate a data table.
+                var data = new google.visualization.DataTable();
+                data.addColumn('string', 'HASH');
+                data.addColumn('string', 'URL');
+                data.addColumn('number', 'number');
+                data.addRows(20);
+
+                data.setCell(0, 0,'#engvind');
+                data.setCell(1, 0,'#moeenali');
+                data.setCell(2, 0,'#indvseng');
+                data.setCell(3, 0,'#thebeardthatsfeared');
+                data.setCell(4, 0,'#engvsind');
+                data.setCell(5, 0,'#cricket');
+                data.setCell(6, 0,'#investectest');
+                data.setCell(7, 0,'#india');
+                data.setCell(8, 0,'#anderson');
+                data.setCell(9, 0,'#thebigtest');
+                data.setCell(10, 0,'#england');
+                data.setCell(11, 0,'#vk18fanclub');
+                data.setCell(12, 0,'#waitrose');
+                data.setCell(13, 0,'#dhoni');
+                data.setCell(14, 0,'#gomo');
+                data.setCell(15, 0,'#savegaza');
+                data.setCell(16, 0,'#royal');
+                data.setCell(17, 0,'#bliss');
+                data.setCell(18, 0,'#indveng');
+				data.setCell(19, 0,'#win');
+
+                data.setCell(0,2,40);
+                data.setCell(1,2,35);
+                data.setCell(2,2,30);
+                data.setCell(3,2,27);
+                data.setCell(4,2,26);
+                data.setCell(5,2,25);
+                data.setCell(6,2,24);
+                data.setCell(7,2,23);
+                data.setCell(8,2,22);
+                data.setCell(9,2,21);
+                data.setCell(10,2,20);
+                data.setCell(11,2,19);
+                data.setCell(12,2,18);
+                data.setCell(13,2,17);
+                data.setCell(14,2,16);
+                data.setCell(15,2,15);
+                data.setCell(16,2,14);
+                data.setCell(17,2,13);
+                data.setCell(18,2,12);
+                data.setCell(19,2,11);
+
+
+                // Instantiate our table object.
+                var vis = new gviz_word_cumulus.WordCumulus(document.getElementById('textcloud'));
+
+                // Draw our table with the data we created locally.
+                vis.draw(data, {text_color: '#F2F5A9', speed:50, width:"100%", height:600});
+            }
+        </script>
+    </head>
+    <body  >
+        <div class="container" >
+            <ul id="gn-menu" class="gn-menu-main">
+                <li class="gn-trigger">
+                    <a class="gn-icon gn-icon-menu"><span>Eid</span></a>
+                    <nav class="gn-menu-wrapper">
+                        <div class="gn-scroller">
+                            <ul class="gn-menu">
+                                <a class=""><span>Menu</span></a>
+
+                                <li><a class="gn-icon gn-icon-tmap"href="#">Sentiment Map Of Dictionary 1</a>
+                                    <ul class="gn-submenu">
+                                        <li><a class="gn-icon gn-icon-article" href="map_ivec1.html">By Country</a></li>
+                                        <li><a class="gn-icon gn-icon-pictures" href="map_ivet1.html">By Time Zone</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="gn-icon gn-icon-tmap"href="#">Sentiment Map Of Dictionary 2</a>
+                                    <ul class="gn-submenu">
+                                        <li><a class="gn-icon gn-icon-article" href="map_ivec2.html">By Country</a></li>
+                                        <li><a class="gn-icon gn-icon-pictures" href="map_ivet2.html">By Time Zone</a></li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <a class="gn-icon gn-icon-download" href="#">Tweet</a>
+                                    <ul class="gn-submenu">
+                                        <li><a class="gn-icon gn-icon-article" href="tweet_ivep.html">Most Positive</a></li>
+                                        <li><a class="gn-icon gn-icon-pictures" href="tweet_iven.html">Most Negative</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="gn-icon gn-icon-help"href="hash_ive.html">HashTags</a></li>
+                                <li><a class="gn-icon gn-icon-cog">Top Users</a>
+                                    <ul class="gn-submenu">
+                                        <li><a class="gn-icon gn-icon-article"href="follow_ive.html">Followers</a></li>
+                                        <li><a class="gn-icon gn-icon-pictures" href="friend_ive.html">Friends</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class="gn-icon gn-icon-archive" href="aboutus.html">About Us</a>
+                                </li>
+                            </ul>
+                        </div><!-- /gn-scroller -->
+                    </nav>
+                </li>
+
+
+
+    <li><a href="index.html">HOME</a></li>
+    <li><a class="" href="cwg.html"><span>Common Wealth Games</span></a></li>
+    <li><a class="" href="eid.html"><span>Eid</span></a></li>    
+    <li><a class="" href="ive.html"><span>India vs England</span></a></li>    
+    <li><a class="" href="gaza.html"><span>Gaza Attack</span></a></li>   
+    <li><a class="" href="xiaomi.html"><span>XiaomiMi3</span></a></li>  
+    <li><a class="" href="screen.html"><span>ScreenShots</span></a></li> 
+    <li><a class="" href="aboutus.html"><span>About Us</span></a></li>     
+
+
+    </ul>
+<div id="textcloud" ></div>
+</div><!-- /container -->
+<script src="js/classie.js"></script>
+<script src="js/gnmenu.js"></script>
+<script>
+    new gnMenu( document.getElementById( 'gn-menu' ) );
+</script>
+<div class="credit">
+    <h1>Project by <span>Nitesh Singh, Dr. Anuj Bala</span></h1>
+</div>
+</body>
+</html>

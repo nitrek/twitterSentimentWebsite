@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>Twitter Sentiment Analysis</title>
+<meta name="description" content="Twiter Sentiment and Data  analysis" />
+<meta name="keywords" content="twitter sentiment analysis,twitter,sentiment,hadoop,hive" />
+<meta name="author" content="NiteshSingh" />
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="css/demo.css" />
+<link rel="stylesheet" type="text/css" href="css/component.css" />
+    <style type="text/css">
+table.hovertable {
+	font-family: verdana,arial,sans-serif;
+	font-size:11px;
+	color:#333333;
+	border-width: 1px;
+	border-color: #999999;
+	border-collapse: collapse;
+}
+table.hovertable th {
+	background-color:#c3dde0;
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #a9c6c9;
+}
+table.hovertable tr {
+	background-color:#d4e3e5;
+}
+table.hovertable td {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #a9c6c9;
+}
+</style>
+  </head>
+
+  <body>
+      
+              <div class="container">
+            <ul id="gn-menu" class="gn-menu-main">
+                <li class="gn-trigger">
+                    <a class="gn-icon gn-icon-menu"><span>Eid</span></a>
+                    <nav class="gn-menu-wrapper">
+                        <div class="gn-scroller">
+                            <ul class="gn-menu">
+                                <a class=""><span>Menu</span></a>
+                               
+
+                            <li><a class="gn-icon gn-icon-tmap"href="#">Sentiment Map Of Dictionary 1</a>
+                                <ul class="gn-submenu">
+                                    <li><a class="gn-icon gn-icon-article" href="map_eidc1.html">By Country</a></li>
+                                    <li><a class="gn-icon gn-icon-pictures" href="map_eidt1.html">By Time Zone</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="gn-icon gn-icon-tmap"href="#">Sentiment Map Of Dictionary 2</a>
+                                <ul class="gn-submenu">
+                                    <li><a class="gn-icon gn-icon-article" href="map_eidc2.html">By Country</a></li>
+                                    <li><a class="gn-icon gn-icon-pictures" href="map_eidt2.html">By Time Zone</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a class="gn-icon gn-icon-download" href="#">Tweet</a>
+                                <ul class="gn-submenu">
+                                    <li><a class="gn-icon gn-icon-article" href="tweet_eidp.html">Most Positive</a></li>
+                                    <li><a class="gn-icon gn-icon-pictures" href="tweet_eidn.html">Most Negative</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a class="gn-icon gn-icon-help"href="hash_eid.html">HashTags</a></li>
+                            <li><a class="gn-icon gn-icon-cog" href="#">Top Users</a>
+                                <ul class="gn-submenu">
+                                    <li><a class="gn-icon gn-icon-article"href="follow_eid.html">Followers</a></li>
+                                    <li><a class="gn-icon gn-icon-pictures" href="friend_eid.html">Friends</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a class="gn-icon gn-icon-archive" href="aboutus.html">About Us</a></li>
+
+                            </ul>
+                        </div><!-- /gn-scroller -->
+                </nav>
+            </li>
+
+       
+    <li><a href="index.html">HOME</a></li>
+    <li><a class="" href="cwg.html"><span>Common Wealth Games</span></a></li>
+    <li><a class="" href="eid.html"><span>Eid</span></a></li>    
+    <li><a class="" href="ive.html"><span>India vs England</span></a></li>    
+    <li><a class="" href="gaza.html"><span>Gaza Attack</span></a></li>   
+    <li><a class="" href="xiaomi.html"><span>XiaomiMi3</span></a></li>  
+    <li><a class="" href="screen.html"><span>ScreenShots</span></a></li> 
+    <li><a class="" href="aboutus.html"><span>About Us</span></a></li>          
+    </ul> 
+
+</div><!-- /container -->
+<script src="js/classie.js"></script>
+<script src="js/gnmenu.js"></script>
+<script>
+new gnMenu( document.getElementById( 'gn-menu' ) );
+</script>
+<table class="hovertable" style="position:absolute;top:100px;left:100px; width:80%; z-index:-2;">
+<tr>
+	<th>Country</th><th>Tweet</th>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffd062';" onmouseout="this.style.backgroundColor='#d4e3e5';">
+<td> UNITED STATES</td><td> @Rajput_Ramesh: Muslims kill Hindus Muslims kill Sikhs Muslims kill Jews Muslims kill Palentines Muslims kill Muslims EID MUBARAK http:/?</td>
+</tr>
+    
+<tr onmouseover="this.style.backgroundColor='#ffe166';" onmouseout="this.style.backgroundColor='#d4e3e5';">
+<td> INDIA</td><td>  @Rajput_Ramesh: Muslims kill Hindus Muslims kill Sikhs Muslims kill Jews Muslims kill Palentines Muslims kill Muslims EID MUBARAK http:/?</td>
+</tr>
+    
+<tr onmouseover="this.style.backgroundColor='#fff266';" onmouseout="this.style.backgroundColor='#d4e3e5';">
+<td> UNITED STATES</td><td>@Papa_J_Pickles: ""War is worse than hell. In hell there are no innocent people."" #PrayForGaza http://t.co/gLYgbnSJqj</td></tr>
+    
+<tr onmouseover="this.style.backgroundColor='#fff266';" onmouseout="this.style.backgroundColor='#d4e3e5';">
+<td> AUSTRALIA</td><td>   @zullubis22: To @IDFSpokesperson @IDForces  Fuck you children murderer! You're fucking worst than Nazis and Hitler! #PrayForGaza http://?</td>
+</tr>
+    
+<tr onmouseover="this.style.backgroundColor='#fff466';" onmouseout="this.style.backgroundColor='#d4e3e5';">
+<td> CANADA</td><td>   @Casifamosoo: You can give a nigga a calendar of thirst traps suck the skin off his penis cook him a whole feast  NIGGAS GONE STILL FUCK?</td>
+</tr>
+    
+<tr onmouseover="this.style.backgroundColor='#fff566';" onmouseout="this.style.backgroundColor='#d4e3e5';">
+<td> PAKISTAN</td><td>  @BBCAfrica: #Glasgow2014: Losing with style. It's not always the winning that counts   http://t.co/M6rolQtgiC http://t.co/3k3O2bviAO</td>
+
+<tr onmouseover="this.style.backgroundColor='#fff666';" onmouseout="this.style.backgroundColor='#d4e3e5';">
+<td> PAKISTAN</td><td>   @ftepakistan: Eid this year:  War in Palestine  War in Syria War in Iraq  War in Libya War in Pakistan War in Yemen</td>
+
+<tr onmouseover="this.style.backgroundColor='#fff766';" onmouseout="this.style.backgroundColor='#d4e3e5';">
+<td> CANADA</td><td>   @y__alb: How fucking disgusting can you be to do that to four children? What the fuck! #PrayForGaza #fuckyouisrael</td>
+
+<tr onmouseover="this.style.backgroundColor='#fff866';" onmouseout="this.style.backgroundColor='#d4e3e5';">
+<td> CANADA</td><td>  @Zahrafkh: It's a gloomy & heartbreaking #Eid. We have replaced compassion & humanity with deception & cruelty. When will we learn to lo?</td>
+</table>
+
+<div class="credit" style="position:absolute;top:540px; width:99%;z-index:0;">
+<h1>Project by <span>Nitesh Singh, Dr. Anuj Bala</span></h1>
+</div>
+  </body>
+</html>
